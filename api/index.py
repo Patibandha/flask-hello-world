@@ -5,8 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    gdown.download('https://colab.research.google.com/drive/1uf0ZjX-uqJC6LaObRUZpfdQI7TYqkTN-', 'colab.ipynb', quiet=False)
-    return jsonify(message='colab notebook ran successfully')
+    return jsonify(message='hi')
 
 @app.route('/about')
 def about():
